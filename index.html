@@ -1,0 +1,1723 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>D'cor Imoveis</title>
+
+    <!-- Site favicon -->
+    <link rel="shortcut icon" href="./img/house.png" type="image/x-icon" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons font styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd"
+      crossorigin="anonymous"
+    /> -->
+
+    <!-- Bootstrap styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- custom styles -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- libraries styles -->
+    <link rel="stylesheet" href="lib/animate/animate.min.css" />
+    <link rel="stylesheet" href="lib/owlcarousel/assets/owl.carousel.min.css" />
+  </head>
+  <body>
+    <div class="container-xxl bg-white p-0">
+      <!-- spinner -->
+      <div
+        id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+      >
+        <div
+          class="spinner-border text-primary"
+          style="width: 3rem; height: 3rem"
+          role="status"
+        >
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+
+      <!-- navbar start -->
+      <div class="container-fluid nav-bar bg-transparent">
+        <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
+          <a
+            href="index.html"
+            class="navbar-brand d-flex align-items-center text-center"
+          >
+            <div class="icon p-2 me-2">
+              <img
+                src="./img/icon-deal.png"
+                class="img-fluid"
+                style="width: 30px; height: 30px"
+                alt="Icon"
+              />
+            </div>
+            <h2 class="m-0 text-primary">D'dor Imóveis</h2>
+          </a>
+          <button
+            type="button"
+            class="navbar-toggler"
+            daata-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto">
+              <a href="index.html" class="nav-item nav-link active">Início</a>
+              <a href="about.html" class="nav-item nav-link active">Sobre</a>
+              <div class="nav-item dropdown">
+                <a
+                  href="index.html"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  >Imóveis</a
+                >
+                <div class="dropdown-menu rounded-0 m-0">
+                  <a href="property-list.html" class="dropdown-item"
+                    >Lista de Imóveis</a
+                  >
+                  <a href="property-type.html" class="dropdown-item"
+                    >Tipos de Imóveis</a
+                  >
+                  <a href="property-agent.html" class="dropdown-item"
+                    >Corretores</a
+                  >
+                </div>
+              </div>
+              <div class="nav-item dropdown">
+                <a
+                  href="index.html"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  >Paginas</a
+                >
+                <div class="dropdown-menu rounded-0 m-0">
+                  <a href="testimonial.html" class="dropdown-item"
+                    >Depoimentos</a
+                  >
+                  <a href="404.html" class="dropdown-item">404 Error</a>
+                </div>
+              </div>
+              <a href="contact.html" class="nav-item nav-link">Contato</a>
+            </div>
+            <a href="#" class="btn btn-primary border-0 px-3 d-none d-lg-flex"
+              >Adicionar Propiedade</a
+            >
+          </div>
+        </nav>
+      </div>
+      <!-- navbar end -->
+      <!-- Header start -->
+      <div class="container-fluid header bg-white p-0">
+        <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
+          <div class="col-md-6 p-5 mt-lg-5">
+            <h1 class="display-5 fw-semibold animated fadeIn mb-4">
+              Encontre a
+              <span class="text-primary">casa dos seus sonhos</span> para morar
+              com sua familia.
+            </h1>
+            <p class="animated fadeIn mb-4 pb-2">
+              Seja bem-vindo ao espaço onde seus sonhos se tornam realidade.
+              Aqui, você encontrará o lugar perfeito para a propriedade dos seus
+              sonhos. Explore nossa variedade e comece sua jornada rumo ao lar
+              ideal
+            </p>
+            <a
+              href="#properties-list"
+              class="btn btn-primary border-0 px-3 py-3 me-3 animated fadeIn"
+              >Começar agora</a
+            >
+          </div>
+          <div class="col-md-6 animated fadeIn">
+            <div class="owl-carousel header-carousel">
+              <div class="owl-carousel-item">
+                <img src="./img/car1.jpg" class="img-fluid" alt="Banner" />
+              </div>
+              <div class="owl-carousel-item">
+                <img src="./img/car2.jpg" class="img-fluid" alt="Banner" />
+              </div>
+              <div class="owl-carousel-item">
+                <img src="./img/car3.jpg" class="img-fluid" alt="Banner" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Header end -->
+      <!-- Search start -->
+      <div
+        class="container-fluid bg-primary mb-5 wow fadeIn"
+        data-wow-delay="0.1s"
+        style="padding: 35px"
+      >
+        <div class="container">
+          <div class="row g-2">
+            <div class="col-md-10">
+              <div class="row g-2">
+                <div class="col-md-4">
+                  <input
+                    type="text"
+                    class="form-control border-0 py-3"
+                    placeholder="Procure palavras-chave"
+                  />
+                </div>
+                <div class="col-md-4">
+                  <select class="form-select border-0 py-3">
+                    <option selected>Selecione o tipo de propiedade</option>
+                    <option value="1">Casa</option>
+                    <option value="2">Apartamento</option>
+                    <option value="3">Terreno</option>
+                    <option value="4">Comercial</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <select class="form-select border-0 py-3">
+                    <option selected>Localização</option>
+                    <option value="1">Goiânia</option>
+                    <option value="2">Ap. de Goiânia</option>
+                    <option value="3">Trindade</option>
+                    <option value="4">Senador Canedo</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <button class="btn btn-dark border-0 w-100 py-3">
+                Pesquisar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Search end -->
+      <!-- Category start -->
+      <div class="container-xxl">
+        <div class="container">
+          <div
+            class="text-center mx-auto mb-5 wow fadeInUp"
+            data-wow-delay="0.1s"
+            style="max-width: 600px"
+          >
+            <h1 class="mb-3">Nosso Portfólio Imobiliário.</h1>
+            <p class="mb-0">
+              Explore nosso diversificado portfólio imobiliário, apresentando
+              uma variedade de tipos de imóveis que atendem a diferentes estilos
+              de vida. Encontre a propriedade ideal que se alinha perfeitamente
+              aos seus objetivos e desejos.
+            </p>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+              <a
+                href="#"
+                class="cat-item d-block bg-light text-center rounded p-3"
+              >
+                <div class="rounded p-4">
+                  <div class="icon mb-3">
+                    <img
+                      src="./img/icon-apartment.png"
+                      class="img-fluid"
+                      alt="Icon"
+                    />
+                  </div>
+                  <h6 class="h6 fw-semibold">Apartamento</h6>
+                  <span class="text-primary">123 Propiedades</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+              <a
+                href="#"
+                class="cat-item d-block bg-light text-center rounded p-3"
+              >
+                <div class="rounded p-4">
+                  <div class="icon mb-3">
+                    <img
+                      src="./img/icon-villa.png"
+                      class="img-fluid"
+                      alt="Icon"
+                    />
+                  </div>
+                  <h6 class="h6 fw-semibold">Kitnet</h6>
+                  <span class="text-primary">123 Propiedades</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+              <a
+                href="#"
+                class="cat-item d-block bg-light text-center rounded p-3"
+              >
+                <div class="rounded p-4">
+                  <div class="icon mb-3">
+                    <img
+                      src="./img/icon-house.png"
+                      class="img-fluid"
+                      alt="Icon"
+                    />
+                  </div>
+                  <h6 class="h6 fw-semibold">Casa</h6>
+                  <span class="text-primary">123 Propiedades</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+              <a
+                href="#"
+                class="cat-item d-block bg-light text-center rounded p-3"
+              >
+                <div class="rounded p-4">
+                  <div class="icon mb-3">
+                    <img
+                      src="./img/icon-deal.png"
+                      class="img-fluid"
+                      alt="Icon"
+                    />
+                  </div>
+                  <h6 class="h6 fw-semibold">Comercial</h6>
+                  <span class="text-primary">123 Propiedades</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+              <a
+                href="#"
+                class="cat-item d-block bg-light text-center rounded p-3"
+              >
+                <div class="rounded p-4">
+                  <div class="icon mb-3">
+                    <img
+                      src="./img/icon-building.png"
+                      class="img-fluid"
+                      alt="Icon"
+                    />
+                  </div>
+                  <h6 class="h6 fw-semibold">Terreno</h6>
+                  <span class="text-primary">123 Propiedades</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+              <a
+                href="#"
+                class="cat-item d-block bg-light text-center rounded p-3"
+              >
+                <div class="rounded p-4">
+                  <div class="icon mb-3">
+                    <img
+                      src="./img/icon-neighborhood.png"
+                      class="img-fluid"
+                      alt="Icon"
+                    />
+                  </div>
+                  <h6 class="h6 fw-semibold">Condominio vertical</h6>
+                  <span class="text-primary">123 Propiedades</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+              <a
+                href="#"
+                class="cat-item d-block bg-light text-center rounded p-3"
+              >
+                <div class="rounded p-4">
+                  <div class="icon mb-3">
+                    <img
+                      src="./img/icon-luxury.png"
+                      class="img-fluid"
+                      alt="Icon"
+                    />
+                  </div>
+                  <h6 class="h6 fw-semibold">Lojas</h6>
+                  <span class="text-primary">123 Propiedades</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+              <a
+                href="#"
+                class="cat-item d-block bg-light text-center rounded p-3"
+              >
+                <div class="rounded p-4">
+                  <div class="icon mb-3">
+                    <img
+                      src="./img/icon-house.png"
+                      class="img-fluid"
+                      alt="Icon"
+                    />
+                  </div>
+                  <h6 class="h6 fw-semibold">Coberturas</h6>
+                  <span class="text-primary">123 Propiedades</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Category end -->
+      <!-- About start -->
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+              <div class="about-img position-relative overflow-hidden p-5 pe-0">
+                <img
+                  class="img-fluid w-100"
+                  src="./img/about.jpg"
+                  alt="About"
+                />
+              </div>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+              <h1 class="mb-4">
+                Aqui é o Lugar Perfeito para Encontrar sua Propriedade dos
+                Sonhos.
+              </h1>
+              <p class="mb-4">
+                Propriedades selecionadas com cuidado, oferecendo conforto,
+                funcionalidade e estilo de vida desejado. Descubra residências
+                que unem design contemporâneo e praticidade para momentos
+                inesquecíveis.
+              </p>
+              <p>
+                <i class="fa fa-check text-primary me-3"></i>Áreas de Lazer
+                Integradas
+              </p>
+              <p>
+                <i class="fa fa-check text-primary me-3"></i>Localizações
+                Estratégicas
+              </p>
+              <p>
+                <i class="fa fa-check text-primary me-3"></i>Ambientes Amplos e
+                Funcionais
+              </p>
+              <a href="#" class="btn btn-primary border-0 py-3 px-5 mt-3"
+                >Leia mais</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- About end -->
+      <!-- Property List start -->
+      <div id="properties-list" class="container-xxl py-5">
+        <div class="container">
+          <div class="row g-0 gx-5 align-items-end">
+            <div class="col-lg-6">
+              <div
+                class="text-start mx-auto mb-5 wow slideInLeft"
+                data-wow-delay="0.1s"
+              >
+                <h1 class="mb-3">Descubra o Lar Perfeito para Você!</h1>
+                <p class="mb-0">
+                  Explore nossa variedade de imóveis. Encontre o lar ideal em
+                  nossa seção exclusiva e dê o primeiro passo para transformar
+                  sonhos em realidade!
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-6 text-start text-lg-end wow slideInRight"
+              data-wow-delay="0.1s"
+            >
+              <ul class="nav nav-pills d-inline-flex justify-content-end mb-5">
+                <li class="nav-item me-2">
+                  <a
+                    href="#tab-1"
+                    class="btn btn-outline-primary active"
+                    data-bs-toggle="pill"
+                    >Todos</a
+                  >
+                </li>
+                <li class="nav-item me-2">
+                  <a
+                    href="#tab-2"
+                    class="btn btn-outline-primary"
+                    data-bs-toggle="pill"
+                    >Venda</a
+                  >
+                </li>
+                <li class="nav-item me-0">
+                  <a
+                    href="#tab-3"
+                    class="btn btn-outline-primary"
+                    data-bs-toggle="pill"
+                    >Aluguel</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab-content">
+            <div id="tab-1" class="tab-pane fade show p-0 active">
+              <div class="row g-4">
+                <div
+                  class="col-lg-4 col-md-6 wow fadeInUp"
+                  data-wow-delay="0.3s"
+                >
+                  <div class="property-item rounded overflow-hidden">
+                    <div class="position-relative overflow-hidden">
+                      <a href="#"><img src="./img/property-1.jpg" alt="" /></a>
+                      <div
+                        class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3"
+                      >
+                        Venda
+                      </div>
+                      <div
+                        class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3"
+                      >
+                        Apartamento
+                      </div>
+                    </div>
+                    <div class="p-4 pb-0">
+                      <h5 class="text-primary mb-3">R$ 560.000</h5>
+                      <a href="#" class="d-block h5 mb-2"
+                        >Apartamento Jardim Goiás</a
+                      >
+                      <p>
+                        <i class="fa fa-map-marker-alt text-primary me-2"></i
+                        >Goiânia, GO
+                      </p>
+                    </div>
+                    <div class="d-flex border-top">
+                      <small class="flex-fill text-center border-end py-2">
+                        <i class="fa fa-ruler-combined text-primary me-2"></i
+                        >1000m<sup>2</sup>
+                      </small>
+                      <small class="flex-fill text-center border-end py-2">
+                        <i class="fa fa-bed text-primary me-2"></i>3 Quartos
+                      </small>
+                      <small class="flex-fill text-center py-2">
+                        <i class="fa fa-bath text-primary me-2"></i>2 Banheiros
+                      </small>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-4 col-md-6 wow fadeInUp"
+                  data-wow-delay="0.3s"
+                >
+                  <div class="property-item rounded overflow-hidden">
+                    <div class="position-relative overflow-hidden">
+                      <a href="#"><img src="./img/property-2.jpg" alt="" /></a>
+                      <div
+                        class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3"
+                      >
+                        Aluguel
+                      </div>
+                      <div
+                        class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3"
+                      >
+                        Condominio
+                      </div>
+                    </div>
+                    <div class="p-4 pb-0">
+                      <h5 class="text-primary mb-3">R$ 560.000</h5>
+                      <a href="#" class="d-block h5 mb-2">Solaris Laguna</a>
+                      <p>
+                        <i class="fa fa-map-marker-alt text-primary me-2"></i
+                        >Senador Canedo, GO
+                      </p>
+                    </div>
+                    <div class="d-flex border-top">
+                      <small class="flex-fill text-center border-end py-2">
+                        <i class="fa fa-ruler-combined text-primary me-2"></i
+                        >1000m<sup>2</sup>
+                      </small>
+                      <small class="flex-fill text-center border-end py-2">
+                        <i class="fa fa-bed text-primary me-2"></i>3 Quartos
+                      </small>
+                      <small class="flex-fill text-center py-2">
+                        <i class="fa fa-bath text-primary me-2"></i>2 Banheiros
+                      </small>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-4 col-md-6 wow fadeInUp"
+                  data-wow-delay="0.5s"
+                >
+                  <div class="property-item rounded overflow-hidden">
+                    <div class="position-relative overflow-hidden">
+                      <a href="#">
+                        <img src="./img/property-3.jpg" alt="" />
+                      </a>
+                      <div
+                        class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3"
+                      >
+                        Venda
+                      </div>
+                      <div
+                        class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3"
+                      >
+                        Sala Comercial
+                      </div>
+                    </div>
+                    <div class="p-4 pb-0">
+                      <h5 class="text-primary mb-3">R$ 560.000</h5>
+                      <a href="#" class="d-block h5 mb-2">Avenida Goiás</a>
+                      <p>
+                        <i class="fa fa-map-marker-alt text-primary me-2"></i
+                        >Jardim Goiás, Goiânia
+                      </p>
+                    </div>
+
+                    <div class="d-flex border-top">
+                      <small class="flex-fill text-center border-end py-2">
+                        <i class="fa fa-ruler-combined text-primary me-2"></i
+                        >1000m<sup>2</sup>
+                      </small>
+                      <small class="flex-fill text-center border-end py-2">
+                        <i class="fa fa-bed text-primary me-2"></i>3 Quartos
+                      </small>
+                      <small class="flex-fill text-center py-2">
+                        <i class="fa fa-bath text-primary me-2"></i>2 Banheiros
+                      </small>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="col-lg-4 col-md-6 wow fadeInUp"
+                  data-wow-delay="0.1s"
+                >
+                  <div class="property-item rounded overflow-hidden">
+                    <div class="position-relative overflow-hidden">
+                      <a href="#">
+                        <img src="./img/property-4.jpg" alt="" />
+                      </a>
+                      <div
+                        class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3"
+                      >
+                        Venda
+                      </div>
+                      <div
+                        class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3"
+                      >
+                        Loteamento
+                      </div>
+                    </div>
+                    <div class="p-4 pb-0">
+                      <h5 class="text-primary mb-3">R$ 560.000</h5>
+                      <a href="#" class="d-block h5 mb-2"
+                        >Avenida 07 de Setembro</a
+                      >
+                      <p>
+                        <i class="fa fa-map-marker-alt text-primary me-2"></i
+                        >Aparecida de Goiânia, GO
+                      </p>
+                    </div>
+                    <div class="d-flex border-top">
+                      <small class="flex-fill text-center border-end py-2">
+                        <i class="fa fa-ruler-combined text-primary me-2"></i
+                        >1000m<sup>2</sup>
+                      </small>
+                      <small class="flex-fill text-center border-end py-2">
+                        <i class="fa fa-bed text-primary me-2"></i>3 Quartos
+                      </small>
+                      <small class="flex-fill text-center py-2">
+                        <i class="fa fa-bath text-primary me-2"></i>2 Banheiros
+                      </small>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="col-lg-4 col-md-6 wow fadeInUp"
+                  data-wow-delay="0.3s"
+                >
+                  <div class="property-item rounded overflow-hidden">
+                    <div class="position-relative overflow-hidden">
+                      <a href="#">
+                        <img src="./img/property-5.jpg" alt="" />
+                      </a>
+                      <div
+                        class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3"
+                      >
+                        Venda
+                      </div>
+                      <div
+                        class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3"
+                      >
+                        Casa
+                      </div>
+                    </div>
+                    <div class="p-4 pb-0">
+                      <h5 class="text-primary mb-3">R$ 560.000</h5>
+                      <a href="#" class="d-block h5 mb-2">Jardins Frankfurt</a>
+                      <p>
+                        <i class="fa fa-map-marker-alt text-primary me-2"></i
+                        >Senador Canedo, GO
+                      </p>
+                    </div>
+                    <div class="d-flex border-top">
+                      <small class="flex-fill text-center border-end py-2">
+                        <i class="fa fa-ruler-combined text-primary me-2"></i
+                        >1000m<sup>2</sup>
+                      </small>
+                      <small class="flex-fill text-center border-end py-2">
+                        <i class="fa fa-bed text-primary me-2"></i>3 Quartos
+                      </small>
+                      <small class="flex-fill text-center py-2">
+                        <i class="fa fa-bath text-primary me-2"></i>2 Banheiros
+                      </small>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="col-lg-4 col-md-6 wow fadeInUp"
+                  data-wow-delay="0.5s"
+                >
+                  <div class="property-item rounded overflow-hidden">
+                    <div class="position-relative overflow-hidden">
+                      <a href="#">
+                        <img src="./img/property-6.jpg" alt="" />
+                      </a>
+                      <div
+                        class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3"
+                      >
+                        Aluguel
+                      </div>
+                      <div
+                        class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3"
+                      >
+                        Sala Comercial
+                      </div>
+                    </div>
+                    <div class="p-4 pb-0">
+                      <h5 class="text-primary mb-3">R$ 560.000</h5>
+                      <a href="#" class="d-block h5 mb-2">Avenida Goiás</a>
+                      <p>
+                        <i class="fa fa-map-marker-alt text-primary me-2"></i
+                        >Jardim Goiás, Goiânia
+                      </p>
+                    </div>
+                    <div class="d-flex border-top">
+                      <small class="flex-fill text-center border-end py-2">
+                        <i class="fa fa-ruler-combined text-primary me-2"></i
+                        >1000m<sup>2</sup>
+                      </small>
+                      <small class="flex-fill text-center border-end py-2">
+                        <i class="fa fa-bed text-primary me-2"></i>3 Quartos
+                      </small>
+                      <small class="flex-fill text-center py-2">
+                        <i class="fa fa-bath text-primary me-2"></i>2 Banheiros
+                      </small>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="col-12 text-center wow fadeInUp"
+                  data-wow-delay="0.1s"
+                >
+                  <a
+                    href="property-list.html"
+                    class="btn btn-primary border-0 py-3 px-5"
+                    >Procure mais imóveis</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div id="tab-2" class="tab-pane fade show p-0">
+              <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                  <div class="property-item rounded overflow-hidden">
+                    <div class="position-relative overflow-hidden">
+                      <a href="#"
+                        ><img
+                          class="img-fluid"
+                          src="./img/property-1.jpg"
+                          alt=""
+                      /></a>
+                      <div
+                        class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3"
+                      >
+                        Venda
+                      </div>
+                      <div
+                        class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3"
+                      >
+                        Apartamento
+                      </div>
+                    </div>
+                    <div class="p-4 pb-0">
+                      <h5 class="text-primary mb-3">R$ 560.000</h5>
+                      <a href="#" class="d-block h5 mb-2">Reserva 27</a>
+                      <p>
+                        <i class="fa fa-map-marker-alt text-primary me-2"></i
+                        >Setor Marista, Goiânia
+                      </p>
+                    </div>
+                    <div class="d-flex border-top">
+                      <small class="flex-fill text-center border-end py-2">
+                        <i class="fa fa-ruler-combined text-primary me-2"></i
+                        >1000m<sup>2</sup>
+                      </small>
+                      <small class="flex-fill text-center border-end py-2">
+                        <i class="fa fa-bed text-primary me-2"></i>3 Quartos
+                      </small>
+                      <small class="flex-fill text-center py-2">
+                        <i class="fa fa-bath text-primary me-2"></i>2 Banheiros
+                      </small>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                  <div class="property-item rounded overflow-hidden">
+                    <div class="position-relative overflow-hidden">
+                      <a href="#"
+                        ><img
+                          class="img-fluid"
+                          src="./img/property-2.jpg"
+                          alt=""
+                      /></a>
+                      <div
+                        class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3"
+                      >
+                        Venda
+                      </div>
+                      <div
+                        class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3"
+                      >
+                        Cobertura
+                      </div>
+                    </div>
+                    <div class="p-4 pb-0">
+                      <h5 class="text-primary mb-3">R$ 560.000</h5>
+                      <a href="#" class="d-block h5 mb-2">Reserva dos Ipês</a>
+                      <p>
+                        <i class="fa fa-map-marker-alt text-primary me-2"></i
+                        >Setor Marista, Goiânia
+                      </p>
+                    </div>
+                    <div class="d-flex border-top">
+                      <small class="flex-fill text-center border-end py-2">
+                        <i class="fa fa-ruler-combined text-primary me-2"></i
+                        >1000m<sup>2</sup>
+                      </small>
+                      <small class="flex-fill text-center border-end py-2">
+                        <i class="fa fa-bed text-primary me-2"></i>3 Quartos
+                      </small>
+                      <small class="flex-fill text-center py-2">
+                        <i class="fa fa-bath text-primary me-2"></i>2 Banheiros
+                      </small>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                  <div class="property-item rounded overflow-hidden">
+                    <div class="position-relative overflow-hidden">
+                      <a href="#"
+                        ><img
+                          class="img-fluid"
+                          src="./img/property-3.jpg"
+                          alt=""
+                      /></a>
+                      <div
+                        class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3"
+                      >
+                        Venda
+                      </div>
+                      <div
+                        class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3"
+                      >
+                        Escritorio
+                      </div>
+                    </div>
+                    <div class="p-4 pb-0">
+                      <h5 class="text-primary mb-3">R$ 560.000</h5>
+                      <a href="#" class="d-block h5 mb-2">Avenida Goiás</a>
+                      <p>
+                        <i class="fa fa-map-marker-alt text-primary me-2"></i
+                        >Setor Marista, Goiânia
+                      </p>
+                    </div>
+                    <div class="d-flex border-top">
+                      <small class="flex-fill text-center border-end py-2">
+                        <i class="fa fa-ruler-combined text-primary me-2"></i
+                        >1000m<sup>2</sup>
+                      </small>
+                      <small class="flex-fill text-center border-end py-2">
+                        <i class="fa fa-bed text-primary me-2"></i>3 Quartos
+                      </small>
+                      <small class="flex-fill text-center py-2">
+                        <i class="fa fa-bath text-primary me-2"></i>2 Banheiros
+                      </small>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                  <div class="property-item rounded overflow-hidden">
+                    <div class="position-relative overflow-hidden">
+                      <a href="#"
+                        ><img
+                          class="img-fluid"
+                          src="./img/property-4.jpg"
+                          alt=""
+                      /></a>
+                      <div
+                        class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3"
+                      >
+                        Venda
+                      </div>
+                      <div
+                        class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3"
+                      >
+                        Loteamento
+                      </div>
+                    </div>
+                    <div class="p-4 pb-0">
+                      <h5 class="text-primary mb-3">R$ 560.000</h5>
+                      <a href="#" class="d-block h5 mb-2">Nova Goianira</a>
+                      <p>
+                        <i class="fa fa-map-marker-alt text-primary me-2"></i
+                        >Goianira, GO
+                      </p>
+                    </div>
+                    <div class="d-flex border-top">
+                      <small class="flex-fill text-center border-end py-2">
+                        <i class="fa fa-ruler-combined text-primary me-2"></i
+                        >1000m<sup>2</sup>
+                      </small>
+                      <small class="flex-fill text-center border-end py-2">
+                        <i class="fa fa-bed text-primary me-2"></i>3 Quartos
+                      </small>
+                      <small class="flex-fill text-center py-2">
+                        <i class="fa fa-bath text-primary me-2"></i>2 Banheiros
+                      </small>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                  <div class="property-item rounded overflow-hidden">
+                    <div class="position-relative overflow-hidden">
+                      <a href="#"
+                        ><img
+                          class="img-fluid"
+                          src="./img/property-5.jpg"
+                          alt=""
+                      /></a>
+                      <div
+                        class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3"
+                      >
+                        Venda
+                      </div>
+                      <div
+                        class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3"
+                      >
+                        Casa
+                      </div>
+                    </div>
+                    <div class="p-4 pb-0">
+                      <h5 class="text-primary mb-3">R$ 560.000</h5>
+                      <a href="#" class="d-block h5 mb-2"
+                        >Avenida Sol Nascente</a
+                      >
+                      <p>
+                        <i class="fa fa-map-marker-alt text-primary me-2"></i
+                        >Senador Canedo, GO
+                      </p>
+                    </div>
+                    <div class="d-flex border-top">
+                      <small class="flex-fill text-center border-end py-2">
+                        <i class="fa fa-ruler-combined text-primary me-2"></i
+                        >1000m<sup>2</sup>
+                      </small>
+                      <small class="flex-fill text-center border-end py-2">
+                        <i class="fa fa-bed text-primary me-2"></i>3 Quartos
+                      </small>
+                      <small class="flex-fill text-center py-2">
+                        <i class="fa fa-bath text-primary me-2"></i>2 Banheiros
+                      </small>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                  <div class="property-item rounded overflow-hidden">
+                    <div class="position-relative overflow-hidden">
+                      <a href="#"
+                        ><img
+                          class="img-fluid"
+                          src="./img/property-6.jpg"
+                          alt=""
+                      /></a>
+                      <div
+                        class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3"
+                      >
+                        Aluguel
+                      </div>
+                      <div
+                        class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3"
+                      >
+                        Loja
+                      </div>
+                    </div>
+                    <div class="p-4 pb-0">
+                      <h5 class="text-primary mb-3">R$ 560.000</h5>
+                      <a href="#" class="d-block h5 mb-2">Avenida T7</a>
+                      <p>
+                        <i class="fa fa-map-marker-alt text-primary me-2"></i
+                        >Setor Bueno, Goiânia
+                      </p>
+                    </div>
+                    <div class="d-flex border-top">
+                      <small class="flex-fill text-center border-end py-2">
+                        <i class="fa fa-ruler-combined text-primary me-2"></i
+                        >1000m<sup>2</sup>
+                      </small>
+                      <small class="flex-fill text-center border-end py-2">
+                        <i class="fa fa-bed text-primary me-2"></i>3 Quartos
+                      </small>
+                      <small class="flex-fill text-center py-2">
+                        <i class="fa fa-bath text-primary me-2"></i>2 Banheiros
+                      </small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 text-center">
+                  <a
+                    href="property-list.html"
+                    class="btn btn-primary border-0 py-3 px-5"
+                    >Procure mais imóveis</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div id="tab-3" class="tab-pane fade show p-0">
+              <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                  <div class="property-item rounded overflow-hidden">
+                    <div class="position-relative overflow-hidden">
+                      <a href="#"
+                        ><img
+                          class="img-fluid"
+                          src="./img/property-1.jpg"
+                          alt=""
+                      /></a>
+                      <div
+                        class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3"
+                      >
+                        Venda
+                      </div>
+                      <div
+                        class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3"
+                      >
+                        Apartamento
+                      </div>
+                    </div>
+                    <div class="p-4 pb-0">
+                      <h5 class="text-primary mb-3">R$ 560.000</h5>
+                      <a href="#" class="d-block h5 mb-2">Casa Opus Areão</a>
+                      <p>
+                        <i class="fa fa-map-marker-alt text-primary me-2"></i
+                        >Setor Marista, Goiânia
+                      </p>
+                    </div>
+                    <div class="d-flex border-top">
+                      <small class="flex-fill text-center border-end py-2">
+                        <i class="fa fa-ruler-combined text-primary me-2"></i
+                        >1000m<sup>2</sup>
+                      </small>
+                      <small class="flex-fill text-center border-end py-2">
+                        <i class="fa fa-bed text-primary me-2"></i>3 Quartos
+                      </small>
+                      <small class="flex-fill text-center py-2">
+                        <i class="fa fa-bath text-primary me-2"></i>2 Banheiros
+                      </small>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                  <div class="property-item rounded overflow-hidden">
+                    <div class="position-relative overflow-hidden">
+                      <a href="#"
+                        ><img
+                          class="img-fluid"
+                          src="./img/property-2.jpg"
+                          alt=""
+                      /></a>
+                      <div
+                        class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3"
+                      >
+                        Aluguel
+                      </div>
+                      <div
+                        class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3"
+                      >
+                        Condominio
+                      </div>
+                    </div>
+                    <div class="p-4 pb-0">
+                      <h5 class="text-primary mb-3">R$ 560.000</h5>
+                      <a href="#" class="d-block h5 mb-2">Jardins Cannes</a>
+                      <p>
+                        <i class="fa fa-map-marker-alt text-primary me-2"></i
+                        >Aparecida de Goiânia, GO
+                      </p>
+                    </div>
+                    <div class="d-flex border-top">
+                      <small class="flex-fill text-center border-end py-2">
+                        <i class="fa fa-ruler-combined text-primary me-2"></i
+                        >1000m<sup>2</sup>
+                      </small>
+                      <small class="flex-fill text-center border-end py-2">
+                        <i class="fa fa-bed text-primary me-2"></i>3 Quartos
+                      </small>
+                      <small class="flex-fill text-center py-2">
+                        <i class="fa fa-bath text-primary me-2"></i>2 Banheiros
+                      </small>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                  <div class="property-item rounded overflow-hidden">
+                    <div class="position-relative overflow-hidden">
+                      <a href="#"
+                        ><img
+                          class="img-fluid"
+                          src="./img/property-3.jpg"
+                          alt=""
+                      /></a>
+                      <div
+                        class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3"
+                      >
+                        Venda
+                      </div>
+                      <div
+                        class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3"
+                      >
+                        Sala Comercial
+                      </div>
+                    </div>
+                    <div class="p-4 pb-0">
+                      <h5 class="text-primary mb-3">R$ 560.000</h5>
+                      <a href="#" class="d-block h5 mb-2"
+                        >Avenida Jamel Cecilio</a
+                      >
+                      <p>
+                        <i class="fa fa-map-marker-alt text-primary me-2"></i
+                        >Jardim Goiás, Goiânia
+                      </p>
+                    </div>
+                    <div class="d-flex border-top">
+                      <small class="flex-fill text-center border-end py-2">
+                        <i class="fa fa-ruler-combined text-primary me-2"></i
+                        >1000m<sup>2</sup>
+                      </small>
+                      <small class="flex-fill text-center border-end py-2">
+                        <i class="fa fa-bed text-primary me-2"></i>3 Quartos
+                      </small>
+                      <small class="flex-fill text-center py-2">
+                        <i class="fa fa-bath text-primary me-2"></i>2 Banheiros
+                      </small>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                  <div class="property-item rounded overflow-hidden">
+                    <div class="position-relative overflow-hidden">
+                      <a href="#"
+                        ><img
+                          class="img-fluid"
+                          src="./img/property-4.jpg"
+                          alt=""
+                      /></a>
+                      <div
+                        class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3"
+                      >
+                        Aluguel
+                      </div>
+                      <div
+                        class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3"
+                      >
+                        Loteamento
+                      </div>
+                    </div>
+                    <div class="p-4 pb-0">
+                      <h5 class="text-primary mb-3">R$ 560.000</h5>
+                      <a href="#" class="d-block h5 mb-2">Rua Itaberaí</a>
+                      <p>
+                        <i class="fa fa-map-marker-alt text-primary me-2"></i
+                        >Aparecida de Goiânia, GO
+                      </p>
+                    </div>
+                    <div class="d-flex border-top">
+                      <small class="flex-fill text-center border-end py-2">
+                        <i class="fa fa-ruler-combined text-primary me-2"></i
+                        >1000m<sup>2</sup>
+                      </small>
+                      <small class="flex-fill text-center border-end py-2">
+                        <i class="fa fa-bed text-primary me-2"></i>3 Quartos
+                      </small>
+                      <small class="flex-fill text-center py-2">
+                        <i class="fa fa-bath text-primary me-2"></i>2 Banheiros
+                      </small>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                  <div class="property-item rounded overflow-hidden">
+                    <div class="position-relative overflow-hidden">
+                      <a href="#"
+                        ><img
+                          class="img-fluid"
+                          src="./img/property-5.jpg"
+                          alt=""
+                      /></a>
+                      <div
+                        class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3"
+                      >
+                        Venda
+                      </div>
+                      <div
+                        class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3"
+                      >
+                        Casa
+                      </div>
+                    </div>
+                    <div class="p-4 pb-0">
+                      <h5 class="text-primary mb-3">R$ 560.000</h5>
+                      <a href="#" class="d-block h5 mb-2">Jardins Cannes</a>
+                      <p>
+                        <i class="fa fa-map-marker-alt text-primary me-2"></i
+                        >Senador Canedo, GO
+                      </p>
+                    </div>
+                    <div class="d-flex border-top">
+                      <small class="flex-fill text-center border-end py-2">
+                        <i class="fa fa-ruler-combined text-primary me-2"></i
+                        >1000m<sup>2</sup>
+                      </small>
+                      <small class="flex-fill text-center border-end py-2">
+                        <i class="fa fa-bed text-primary me-2"></i>3 Quartos
+                      </small>
+                      <small class="flex-fill text-center py-2">
+                        <i class="fa fa-bath text-primary me-2"></i>2 Banheiros
+                      </small>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                  <div class="property-item rounded overflow-hidden">
+                    <div class="position-relative overflow-hidden">
+                      <a href="#"
+                        ><img
+                          class="img-fluid"
+                          src="./img/property-6.jpg"
+                          alt=""
+                      /></a>
+                      <div
+                        class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3"
+                      >
+                        Aluguel
+                      </div>
+                      <div
+                        class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3"
+                      >
+                        Loja
+                      </div>
+                    </div>
+                    <div class="p-4 pb-0">
+                      <h5 class="text-primary mb-3">R$ 560.000</h5>
+                      <a href="#" class="d-block h5 mb-2"
+                        >Avenida Jamel Cecilio</a
+                      >
+                      <p>
+                        <i class="fa fa-map-marker-alt text-primary me-2"></i
+                        >Jardim Goiás, Goiânia
+                      </p>
+                    </div>
+                    <div class="d-flex border-top">
+                      <small class="flex-fill text-center border-end py-2">
+                        <i class="fa fa-ruler-combined text-primary me-2"></i
+                        >1000m<sup>2</sup>
+                      </small>
+                      <small class="flex-fill text-center border-end py-2">
+                        <i class="fa fa-bed text-primary me-2"></i>3 Quartos
+                      </small>
+                      <small class="flex-fill text-center py-2">
+                        <i class="fa fa-bath text-primary me-2"></i>2 Banheiros
+                      </small>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 text-center">
+                  <a
+                    href="property-list.html"
+                    class="btn btn-primary border-0 py-3 px-5"
+                    >Procure mais imóveis</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Property List end -->
+      <!-- Call action start -->
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div class="bg-light rounded p-3">
+            <div
+              class="bg-white rounded p-4"
+              style="border: 1px dashed rgba(0, 185, 142, 0.3)"
+            >
+              <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                  <img
+                    class="img-fluid rounded w-100"
+                    src="./img/call-to-action.jpg"
+                    alt="Call Action"
+                    title="Call Action"
+                  />
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                  <div class="mb-4">
+                    <h1 class="mb-3">
+                      Converse com Nossos Profissionais Credenciados
+                    </h1>
+                    <p>
+                      Entre em contato com nossos corretores credenciados para
+                      orientação personalizada. Estamos comprometidos em
+                      oferecer suporte especializado e tornar sua experiência
+                      imobiliária tranquila e bem-sucedida. Estamos aguardando o
+                      seu contato!
+                    </p>
+                  </div>
+                  <a href="#" class="btn btn-primary border-0 py-3 px-4">
+                    <i class="fa fa-phone-alt me-2"></i>Entre em contato
+                  </a>
+                  <a
+                    href="#"
+                    class="b-color btn btn-primary border-0 py-3 px-4"
+                  >
+                    <i class="fa fa-calendar-alt me-2"></i>Marcar uma visita
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Call action end -->
+      <!-- Team start -->
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div
+            class="text-center mx-auto mb-5 wow fadeInUp"
+            data-wow-delay="0.1s"
+            style="max-width: 600px"
+          >
+            <h1 class="mb-3">Nosso time de corretores</h1>
+            <p>
+              Nossos corretores especializados estão prontos para ajudar, seja
+              online ou presencialmente. Entre em contato agora mesmo para
+              encontrar a casa dos seus sonhos com o suporte personalizado que
+              você merece!
+            </p>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item rounded overflow-hidden">
+                <div class="position-relative">
+                  <img class="img-fluid" src="img/team-1.jpg" alt="" />
+                  <div
+                    class="position-absolute start-50 top-100 translate-middle d-flex align-items-center"
+                  >
+                    <a class="btn btn-square mx-1" href=""
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a class="btn btn-square mx-1" href=""
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a class="btn btn-square mx-1" href=""
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="text-center p-4 mt-3">
+                  <h5 class="fw-bold mb-0">Flávia silva</h5>
+                  <small>Corretora de Imóveis</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="team-item rounded overflow-hidden">
+                <div class="position-relative">
+                  <img class="img-fluid" src="img/team-2.jpg" alt="" />
+                  <div
+                    class="position-absolute start-50 top-100 translate-middle d-flex align-items-center"
+                  >
+                    <a class="btn btn-square mx-1" href=""
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a class="btn btn-square mx-1" href=""
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a class="btn btn-square mx-1" href=""
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="text-center p-4 mt-3">
+                  <h5 class="fw-bold mb-0">Luciano Góes</h5>
+                  <small>Corretor de Imóveis</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="team-item rounded overflow-hidden">
+                <div class="position-relative">
+                  <img class="img-fluid" src="img/team-3.jpg" alt="" />
+                  <div
+                    class="position-absolute start-50 top-100 translate-middle d-flex align-items-center"
+                  >
+                    <a class="btn btn-square mx-1" href=""
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a class="btn btn-square mx-1" href=""
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a class="btn btn-square mx-1" href=""
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="text-center p-4 mt-3">
+                  <h5 class="fw-bold mb-0">Fernanda Willians</h5>
+                  <small>Corretora de Imóveis</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+              <div class="team-item rounded overflow-hidden">
+                <div class="position-relative">
+                  <img class="img-fluid" src="img/team-4.jpg" alt="" />
+                  <div
+                    class="position-absolute start-50 top-100 translate-middle d-flex align-items-center"
+                  >
+                    <a class="btn btn-square mx-1" href=""
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a class="btn btn-square mx-1" href=""
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a class="btn btn-square mx-1" href=""
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="text-center p-4 mt-3">
+                  <h5 class="fw-bold mb-0">João Guilherme</h5>
+                  <small>Corretor de Imóveis</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Team end -->
+      <!-- Testimonial start -->
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div
+            class="text-center mx-auto mb-5 wow fadeInUp"
+            data-wow-delay="0.1s"
+            style="max-width: 600px"
+          >
+            <h1 class="mb-3">Depoimentos dos nossos clientes</h1>
+            <p>
+              Descubra o que nossos clientes têm a dizer sobre a experiência
+              única conosco. Navegue pelos depoimentos e conheça as histórias de
+              sucesso que construímos juntos.
+            </p>
+          </div>
+          <div
+            class="owl-carousel testimonial-carousel wow fadeInUp"
+            data-wow-delay="0.1s"
+          >
+            <div class="testimonial-item bg-light rounded p-3">
+              <div class="bg-white border rounded p-4">
+                <p>
+                  Encontrar minha casa dos sonhos foi fácil com a ajuda dedicada
+                  da equipe. Profissionais, atenciosos e eficientes, tornaram
+                  meu sonho realidade. Recomendo!
+                </p>
+                <div class="d-flex align-items-center">
+                  <img
+                    class="img-fluid flex-shrink-0 rounded"
+                    src="./img/testimonial-1.jpg"
+                    alt=""
+                    style="width: 45px; height: 45px"
+                  />
+                  <div class="ps-3">
+                    <h6 class="fw-bold mb-1">Ana Silva</h6>
+                    <small> Empresária</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-item bg-light rounded p-3">
+              <div class="bg-white border rounded p-4">
+                <p>
+                  Agradeço à equipe pelo excelente serviço. Do início ao fim,
+                  foram comprometidos, transparentes e eficazes. Encontrei meu
+                  lar perfeito com rapidez e facilidade.
+                </p>
+                <div class="d-flex align-items-center">
+                  <img
+                    class="img-fluid flex-shrink-0 rounded"
+                    src="./img/testimonial-2.jpg"
+                    alt=""
+                    style="width: 45px; height: 45px"
+                  />
+                  <div class="ps-3">
+                    <h6 class="fw-bold mb-1">Carlos Oliveira</h6>
+                    <small>Advogado</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-item bg-light rounded p-3">
+              <div class="bg-white border rounded p-4">
+                <p>
+                  Experiência incrível! Corretores atenciosos entenderam
+                  exatamente o que eu procurava. O processo foi suave, e agora
+                  tenho um lar que superou minhas expectativas. Grato!
+                </p>
+                <div class="d-flex align-items-center">
+                  <img
+                    class="img-fluid flex-shrink-0 rounded"
+                    src="./img/testimonial-3.jpg"
+                    alt=""
+                    style="width: 45px; height: 45px"
+                  />
+                  <div class="ps-3">
+                    <h6 class="fw-bold mb-1">Mario Santos</h6>
+                    <small>Designer de Interiores</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Testimonial end -->
+      <!-- Footer start -->
+      <div
+        class="contanier-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn"
+        data-wow-delay="0.1s"
+      >
+        <div class="container py-5">
+          <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+              <h5 class="text-white mb-4">Entre em contato.</h5>
+              <p class="mb-2">
+                <i class="fa fa-map-marker-alt text-primary me-2"></i>Vila
+                Galvão, Senador Canedo - GO
+              </p>
+              <p class="mb-2">
+                <i class="fa fa-phone-alt text-primary me-2"></i>+55 62
+                1234-5678
+              </p>
+              <p class="mb-2">
+                <i class="fa fa-envelope text-primary me-2"></i>info@email.com
+              </p>
+              <div class="d-flex pt-2">
+                <a href="#" class="btn btn-outline-light btn-social">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="btn btn-outline-light btn-social">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="btn btn-outline-light btn-social">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="btn btn-outline-light btn-social">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="btn btn-outline-light btn-social">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h5 class="text-white mb-4">Links rápidos</h5>
+              <a href="about.html" class="btn btn-link text-white-50"
+                >Sobre nós</a
+              >
+              <a href="#" class="btn btn-link text-white-50">Nossos Serviços</a>
+              <a href="property-agent.html" class="btn btn-link text-white-50"
+                >Equipe</a
+              >
+              <a href="#" class="btn btn-link text-white-50"
+                >Termos de serviço</a
+              >
+              <a href="#" class="btn btn-link text-white-50"
+                >Política de privacidade</a
+              >
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h5 class="text-white mb-4">Galeria de fotos</h5>
+              <div class="row g-2 pt-2">
+                <div class="col-4">
+                  <img
+                    src="./img/property-1.jpg"
+                    alt=""
+                    class="img-fluid bg-light p-1"
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="./img/property-2.jpg"
+                    alt=""
+                    class="img-fluid bg-light p-1"
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="./img/property-3.jpg"
+                    alt=""
+                    class="img-fluid bg-light p-1"
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="./img/property-4.jpg"
+                    alt=""
+                    class="img-fluid bg-light p-1"
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="./img/property-5.jpg"
+                    alt=""
+                    class="img-fluid bg-light p-1"
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="./img/property-6.jpg"
+                    alt=""
+                    class="img-fluid bg-light p-1"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h5 class="text-white mb-4">Newsletter</h5>
+              <p>
+                Receba nossas promoções e condições especiais cadastrando-se na
+                nossa Newsletter.
+              </p>
+              <div class="position-relative mx-auto" style="max-width: 400px">
+                <input
+                  type="text"
+                  class="form-control bg-transparent w-100 py-3 ps-4 pe-5"
+                  placeholder="Insira seu email"
+                />
+                <button
+                  type="button"
+                  class="btn btn-primary border-0 py-2 position-absolute top-0 end-0 mt-2 me-2"
+                >
+                  Cadastrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="copyright">
+            <div class="row">
+              <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                &copy;
+                <a
+                  href="#"
+                  class="text-decoration-none fw-semibold navigator-color"
+                  >D'dor Imóveis</a
+                >, 2023 Todos os direitos reservados. Feito por
+                <a
+                  href="#"
+                  class="text-decoration-none fw-medium navigator-color"
+                  >Jeferson</a
+                >
+              </div>
+              <div class="col-md-6 text-center text-md-end">
+                <div class="footer-menu">
+                  <a href="#">Inicio</a>
+                  <a href="#">Cookies</a>
+                  <a href="#">Ajuda</a>
+                  <a href="#">Faq</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+      </div>
+      <!-- Footer end -->
+      <!-- Back to top -->
+      <a
+        href="#"
+        class="btn btn-lg btn-primary btn-lg-square back-to-top border-0"
+      >
+        <i class="fa fa-chevron-up"></i>
+      </a>
+    </div>
+
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

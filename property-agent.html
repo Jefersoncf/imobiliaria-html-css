@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>D'cor Imoveis</title>
+
+    <!-- Site favicon -->
+    <link rel="shortcut icon" href="./img/house.png" type="image/x-icon" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons font styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd"
+      crossorigin="anonymous"
+    /> -->
+
+    <!-- Bootstrap styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- custom styles -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- libraries styles -->
+    <link rel="stylesheet" href="lib/animate/animate.min.css" />
+    <link rel="stylesheet" href="lib/owlcarousel/assets/owl.carousel.min.css" />
+  </head>
+  <body>
+    <div class="container-xxl bg-white p-0">
+      <!-- spinner -->
+      <div
+        id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+      >
+        <div
+          class="spinner-border text-primary"
+          style="width: 3rem; height: 3rem"
+          role="status"
+        >
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+
+      <!-- navbar start -->
+      <div class="container-fluid nav-bar bg-transparent">
+        <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
+          <a
+            href="index.html"
+            class="navbar-brand d-flex align-items-center text-center"
+          >
+            <div class="icon p-2 me-2">
+              <img
+                src="./img/icon-deal.png"
+                class="img-fluid"
+                style="width: 30px; height: 30px"
+                alt="Icon"
+              />
+            </div>
+            <h2 class="m-0 text-primary">D'dor Imóveis</h2>
+          </a>
+          <button
+            type="button"
+            class="navbar-toggler"
+            daata-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto">
+              <a href="index.html" class="nav-item nav-link active">Inicio</a>
+              <a href="about.html" class="nav-item nav-link active">Sobre</a>
+              <div class="nav-item dropdown">
+                <a
+                  href="index.html"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  >Imóveis</a
+                >
+                <div class="dropdown-menu rounded-0 m-0">
+                  <a href="property-list.html" class="dropdown-item"
+                    >Lista de Imóveis</a
+                  >
+                  <a href="property-type.html" class="dropdown-item"
+                    >Tipos de Imóveis</a
+                  >
+                  <a href="property-agent.html" class="dropdown-item"
+                    >Corretores</a
+                  >
+                </div>
+              </div>
+              <div class="nav-item dropdown">
+                <a
+                  href="index.html"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  >Paginas</a
+                >
+                <div class="dropdown-menu rounded-0 m-0">
+                  <a href="testimonial.html" class="dropdown-item"
+                    >Depoimentos</a
+                  >
+                  <a href="404.html" class="dropdown-item">404 Error</a>
+                </div>
+              </div>
+              <a href="contact.html" class="nav-item nav-link">Contato</a>
+            </div>
+            <a href="#" class="btn btn-primary border-0 px-3 d-none d-lg-flex"
+              >Adicionar Propiedade</a
+            >
+          </div>
+        </nav>
+      </div>
+      <!-- navbar end -->
+      <!-- Header start -->
+      <div class="container-fluid header bg-white p-0">
+        <div class="d-flex align-items-center position-relative">
+          <img
+            src="./img/banner.jpg"
+            class="img-fluid w-100 header-img"
+            alt="Header"
+          />
+          <div class="col-md-12 p-5 mt-lg-5 position-absolute">
+            <nav aria-label="breadcrumb animated fadeIn">
+              <ol class="breadcrumb text-uppercase">
+                <li class="breadcrumb-item">
+                  <a href="index.html" class="navigator-color">Inicio</a>
+                </li>
+
+                <li class="breadcrumb-item">
+                  <a href="index.html" class="navigator-color">Paginas</a>
+                </li>
+                <li
+                  class="breadcrumb-item text-body text-white-50 active"
+                  aria-current="page"
+                >
+                  Corretores
+                </li>
+              </ol>
+            </nav>
+            <h1 class="display-5 fw-semibold animated fadeIn mb-4 text-white">
+              Nossos Corretores
+            </h1>
+            <p class="animated fadeIn mb-4 pb-2 text-white">
+              Bem-vindo. Aqui, compartilhamos nossa paixão por encontrar lares
+              perfeitos. Com uma equipe dedicada, buscamos superar expectativas,
+              construindo relações sólidas e realizando sonhos imobiliários.
+              Conheça nossa história, compromisso e a jornada que nos torna uma
+              escolha confiável e inspiradora no mundo imobiliário
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Header end -->
+      <!-- Call action start -->
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div class="bg-light rounded p-3">
+            <div
+              class="bg-white rounded p-4"
+              style="border: 1px dashed rgba(0, 185, 142, 0.3)"
+            >
+              <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                  <img
+                    class="img-fluid rounded w-100"
+                    src="./img/call-to-action.jpg"
+                    alt="Call Action"
+                    title="Call Action"
+                  />
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                  <div class="mb-4">
+                    <h1 class="mb-3">
+                      Converse com Nossos Profissionais Credenciados
+                    </h1>
+                    <p>
+                      Entre em contato com nossos corretores credenciados para
+                      orientação personalizada. Estamos comprometidos em
+                      oferecer suporte especializado e tornar sua experiência
+                      imobiliária tranquila e bem-sucedida. Estamos aguardando o
+                      seu contato!
+                    </p>
+                  </div>
+                  <a href="#" class="btn btn-primary border-0 py-3 px-4">
+                    <i class="fa fa-phone-alt me-2"></i>Entre em contato
+                  </a>
+                  <a
+                    href="#"
+                    class="b-color btn btn-primary border-0 py-3 px-4"
+                  >
+                    <i class="fa fa-calendar-alt me-2"></i>Marcar uma visita
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Call action end -->
+      <!-- Team start -->
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div
+            class="text-center mx-auto mb-5 wow fadeInUp"
+            data-wow-delay="0.1s"
+            style="max-width: 600px"
+          >
+            <h1 class="mb-3">Nosso time de corretores</h1>
+            <p>
+              Nossos corretores especializados estão prontos para ajudar, seja
+              online ou presencialmente. Entre em contato agora mesmo para
+              encontrar a casa dos seus sonhos com o suporte personalizado que
+              você merece!
+            </p>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="team-item rounded overflow-hidden">
+                <div class="position-relative">
+                  <img class="img-fluid" src="img/team-1.jpg" alt="" />
+                  <div
+                    class="position-absolute start-50 top-100 translate-middle d-flex align-items-center"
+                  >
+                    <a class="btn btn-square mx-1" href=""
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a class="btn btn-square mx-1" href=""
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a class="btn btn-square mx-1" href=""
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="text-center p-4 mt-3">
+                  <h5 class="fw-bold mb-0">Flávia silva</h5>
+                  <small>Corretora de Imóveis</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="team-item rounded overflow-hidden">
+                <div class="position-relative">
+                  <img class="img-fluid" src="img/team-2.jpg" alt="" />
+                  <div
+                    class="position-absolute start-50 top-100 translate-middle d-flex align-items-center"
+                  >
+                    <a class="btn btn-square mx-1" href=""
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a class="btn btn-square mx-1" href=""
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a class="btn btn-square mx-1" href=""
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="text-center p-4 mt-3">
+                  <h5 class="fw-bold mb-0">Luciano Góes</h5>
+                  <small>Corretor de Imóveis</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="team-item rounded overflow-hidden">
+                <div class="position-relative">
+                  <img class="img-fluid" src="img/team-3.jpg" alt="" />
+                  <div
+                    class="position-absolute start-50 top-100 translate-middle d-flex align-items-center"
+                  >
+                    <a class="btn btn-square mx-1" href=""
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a class="btn btn-square mx-1" href=""
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a class="btn btn-square mx-1" href=""
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="text-center p-4 mt-3">
+                  <h5 class="fw-bold mb-0">Fernanda Willians</h5>
+                  <small>Corretora de Imóveis</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+              <div class="team-item rounded overflow-hidden">
+                <div class="position-relative">
+                  <img class="img-fluid" src="img/team-4.jpg" alt="" />
+                  <div
+                    class="position-absolute start-50 top-100 translate-middle d-flex align-items-center"
+                  >
+                    <a class="btn btn-square mx-1" href=""
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a class="btn btn-square mx-1" href=""
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a class="btn btn-square mx-1" href=""
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="text-center p-4 mt-3">
+                  <h5 class="fw-bold mb-0">João Guilherme</h5>
+                  <small>Corretor de Imóveis</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Team end -->
+
+      <!-- Footer start -->
+      <div
+        class="contanier-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn"
+        data-wow-delay="0.1s"
+      >
+        <div class="container py-5">
+          <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+              <h5 class="text-white mb-4">Entre em contato.</h5>
+              <p class="mb-2">
+                <i class="fa fa-map-marker-alt text-primary me-2"></i>Vila
+                Galvão, Senador Canedo - GO
+              </p>
+              <p class="mb-2">
+                <i class="fa fa-phone-alt text-primary me-2"></i>+55 62
+                1234-5678
+              </p>
+              <p class="mb-2">
+                <i class="fa fa-envelope text-primary me-2"></i>info@email.com
+              </p>
+              <div class="d-flex pt-2">
+                <a href="#" class="btn btn-outline-light btn-social">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="btn btn-outline-light btn-social">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="btn btn-outline-light btn-social">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="btn btn-outline-light btn-social">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="btn btn-outline-light btn-social">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h5 class="text-white mb-4">Links rápidos</h5>
+              <a href="#" class="btn btn-link text-white-50">Sobre nós</a>
+              <a href="#" class="btn btn-link text-white-50">Nossos Serviços</a>
+              <a href="#" class="btn btn-link text-white-50">Equipe</a>
+              <a href="#" class="btn btn-link text-white-50"
+                >Termos de serviço</a
+              >
+              <a href="#" class="btn btn-link text-white-50"
+                >Política de privacidade</a
+              >
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h5 class="text-white mb-4">Galeria de fotos</h5>
+              <div class="row g-2 pt-2">
+                <div class="col-4">
+                  <img
+                    src="./img/property-1.jpg"
+                    alt=""
+                    class="img-fluid bg-light p-1"
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="./img/property-2.jpg"
+                    alt=""
+                    class="img-fluid bg-light p-1"
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="./img/property-3.jpg"
+                    alt=""
+                    class="img-fluid bg-light p-1"
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="./img/property-4.jpg"
+                    alt=""
+                    class="img-fluid bg-light p-1"
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="./img/property-5.jpg"
+                    alt=""
+                    class="img-fluid bg-light p-1"
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="./img/property-6.jpg"
+                    alt=""
+                    class="img-fluid bg-light p-1"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h5 class="text-white mb-4">Newsletter</h5>
+              <p>
+                Receba nossas promoções e condições especiais cadastrando-se na
+                nossa Newsletter.
+              </p>
+              <div class="position-relative mx-auto" style="max-width: 400px">
+                <input
+                  type="text"
+                  class="form-control bg-transparent w-100 py-3 ps-4 pe-5"
+                  placeholder="Insira seu email"
+                />
+                <button
+                  type="button"
+                  class="btn btn-primary border-0 py-2 position-absolute top-0 end-0 mt-2 me-2"
+                >
+                  Cadastrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="copyright">
+            <div class="row">
+              <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                &copy;
+                <a
+                  href="#"
+                  class="text-decoration-none fw-semibold"
+                  style="color: #00b98e"
+                  >D'dor Imóveis</a
+                >, 2023 Todos os direitos reservados. Feito por
+                <a
+                  href="#"
+                  class="text-decoration-none fw-medium"
+                  style="color: #00b98e"
+                  >Jeferson</a
+                >
+              </div>
+              <div class="col-md-6 text-center text-md-end">
+                <div class="footer-menu">
+                  <a href="#">Inicio</a>
+                  <a href="#">Cookies</a>
+                  <a href="#">Ajuda</a>
+                  <a href="#">Faq</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+      </div>
+      <!-- Footer end -->
+      <!-- Back to top -->
+      <a
+        href="#"
+        class="btn btn-lg btn-primary btn-lg-square back-to-top border-0"
+      >
+        <i class="fa fa-chevron-up"></i>
+      </a>
+    </div>
+
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
