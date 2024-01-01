@@ -10,20 +10,23 @@ Bem-vindo á **D'dor Imóveis**, a plataforma imobiliária que transforma buscas
 
 - HTML
 - CSS
+- Bootstrap
 - JavaScript
 
 ## Demonstração
 
 ![Gif](./img/img.gif)
 
-## 🔗 Link do site no ar
+## 🔗 Link
 
-[![site no ar](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://katherineoelsner.com/)
+- Link do site no ar: (https://jefersoncf.github.io/imobiliaria-html-css/)
 
 ## Autor
 
-- [@jefersoncf](https://www.github.com/Jefersoncf)
+* **Jeferson Ferreira**: @Jefersoncf (https://github.com/Jefersoncf)
 
 ## Licença
 
 [MIT](https://choosealicense.com/licenses/mit/)
+
+Feito por Jeferson Ferreira [contato](www.linkedin.com/in/jeferson-ferreirajf23)
